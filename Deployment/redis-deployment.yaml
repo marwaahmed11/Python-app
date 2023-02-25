@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: redis-container
-        image: marwaahmed11/redis
+        image: marwaahmed11/redis:v1.0
         ports:
         - containerPort: 6379
 
