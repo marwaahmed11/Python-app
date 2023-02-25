@@ -1,11 +1,17 @@
-FROM python:3.9
+# from base image python
+FROM python:3.7-alpine
 
-WORKDIR /app
+# create directory /app and make it as working dirrectory
+WORKDIR /app 
 
-COPY requirements.txt requirements.txt
+# copy requirements content to /app
+COPY requirements.txt /app
 
-RUN pip install -r requirements.txt
+# install dependencies from requirements.txt
+RUN pip3 install --no-cache-dir -r requirements.txt
 
+# copy the app content to /app
 COPY . /app
 
-CMD [ "python", "hello.py" ]
+# run app
+CMD  python3 hello.py
