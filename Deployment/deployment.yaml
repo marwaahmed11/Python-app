@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: python-container
-        image: marwaahmed11/python-iti-app:v1.0
+        image: docker.io/marwaahmed11/python-iti-app:v1.0
         ports:
         - containerPort: 8000
         envFrom:
