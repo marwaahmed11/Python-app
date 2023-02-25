@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: python-container
-        image: gcr.io/warm-pixel-375711/python-app 
+        image: marwaahmed11/python-app 
         ports:
         - containerPort: 8000
         envFrom:
